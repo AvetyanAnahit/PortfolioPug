@@ -1,4 +1,42 @@
 extends ../main.layout.pug
 
-block content
-  h1 Страница обо мне
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/normalize.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    link(rel='stylesheet', href='./css/main.css')
+    title Welcome
+  body
+    .wrapper
+      section.container.welcome-container
+        header.header Авторизоваться
+        .authorise
+          img.authorise-img(src='./images/fashmark-men-trends-nature.png', alt='')
+          .authorise-descripton
+            ul.authorise-descripton__list
+              li.authorise-desciption__name Владимир Астахов
+              li.authorise-desciption__site Личный сайт веб разработчика
+          .authorise-social
+            ul.authorise-social__list
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='25', height='25')
+                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#vk')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='25', height='25')
+                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#github')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='25', height='25')
+                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#in')
+          nav.button
+            ul.button-list
+              li.btn.button-item Мои работы
+              li.btn.button-item Обо мне
+              li.btn.button-item Блог
+          .footer © Владимир Астахов | создано с любовью в LoftSchool | 2016

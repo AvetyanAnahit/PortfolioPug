@@ -18,6 +18,7 @@ const ROOT_PATH = `./${DIST_DIR}`;
 gulp.task("styles", () => {
   return gulp
     .src(`${SRC_DIR}/styles/main.scss`)
+    .pipe($gp.wait(500))
     .pipe($gp.plumber())
     .pipe($gp.sassGlob())
     .pipe($gp.sourcemaps.init())
