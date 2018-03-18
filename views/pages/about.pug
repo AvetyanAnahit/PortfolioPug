@@ -1,42 +1,56 @@
 extends ../main.layout.pug
 
-doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    link(rel='stylesheet', href='./css/normalize.css')
-    link(rel='stylesheet', href='./css/styles.css')
-    link(rel='stylesheet', href='./css/main.css')
-    title Welcome
-  body
+block variables
+  - var title = 'About'
+
+
+  block content
     .wrapper
-      section.container.welcome-container
-        header.header Авторизоваться
-        .authorise
-          img.authorise-img(src='./images/fashmark-men-trends-nature.png', alt='')
-          .authorise-descripton
-            ul.authorise-descripton__list
-              li.authorise-desciption__name Владимир Астахов
-              li.authorise-desciption__site Личный сайт веб разработчика
-          .authorise-social
-            ul.authorise-social__list
-              li.authorise-social__item
-                a.authorise-social__link(href='#')
-                  svg(viewbox='0 0 50 50', width='25', height='25')
-                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#vk')
-              li.authorise-social__item
-                a.authorise-social__link(href='#')
-                  svg(viewbox='0 0 50 50', width='25', height='25')
-                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#github')
-              li.authorise-social__item
-                a.authorise-social__link(href='#')
-                  svg(viewbox='0 0 50 50', width='25', height='25')
-                    use.authorise-social-icons(xlink:href='./icons/archive/sprite.svg#in')
-          nav.button
-            ul.button-list
-              li.btn.button-item Мои работы
-              li.btn.button-item Обо мне
-              li.btn.button-item Блог
-          .footer © Владимир Астахов | создано с любовью в LoftSchool | 2016
+      header.header
+        .links
+          ul.social
+           each item in ['vk', 'github', 'in']
+            li.social-item
+             a(href=`${item}`).social__link
+        .hamburger
+        .hero
+          img.hero-image(src='./images/content/fashmark-men-trends-nature.png', alt='')
+          span.hero-name Владимир Астахов
+          span.hero-self Личный сайт веб разработчика
+        .arrow-down
+          a.arrow-down(href='')
+            svg(viewbox='0 0 50 50', width='25', height='25')
+              use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='.images/icons/sprite.svg#arrow_down')
+      section.about
+        .about__left
+         svg.triangle
+         .about__left-title
+          .block__title Обо мне
+         .about__left-description
+          .user-description
+           .user-description__image
+            img.user-description__avatar
+            .user-description__title
+             .block-subtitle Кто я
+            .user-description__text
+            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        .about__right
+          svg.triangle
+         .about__right-title
+          .block__subtitle Чем я могу быть вам полезен
+         .about__right-description.text-content
+           p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+         .about__right-content
+          ul.skills-list
+            each item in ['frontend', 'backend', 'workflow']  
+                li.skills-list__item
+                 .skills-row
+                  .skills-row__title #{item}
+                ul.skills-row__list
+                 li.skills-row__item
+                    .skill
+                     svg.skill__circle
+                      .sskill__title
+      section.map
+      footer.footer

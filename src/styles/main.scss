@@ -5,11 +5,17 @@ $text-color: #455a64;
 $grey: #373e42;
 $light-grey: #dfdcd5;
 
-@import 'normalize.css';
+@import 'normalize.css'; 
 @import './layout/fonts.scss';
 @import './layout/base.scss';
 
 @import './icons/_sass-inline-svg.scss';
-@import './icons/_sass-inline-svg-data.scss';
+@import './icons/_sass-inline-svg-data.scss';  
 
+@import './blocks/button.scss';
+@import './blocks/block';
+@import './blocks/authorise.scss';  
+@import './blocks/authorise-social.scss';
+@import './blocks/form.scss';
+@import './header.scss*';
 @import './blocks/**/*';

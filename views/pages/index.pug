@@ -4,5 +4,33 @@ block variables
   - var title = 'Главная страница'
 
 block content
-  h1 Главная страница
-  .block
+  section.container.welcome-container
+  header.header-authorise Авторизоваться
+  .authorise
+    form.form-authorise(action='/')
+      h2.form-authorise__title Авторизуйтесь
+      .rectangle
+      .form-authorise__coloumn
+        .form-authorise__row
+          span.img
+            img.img-icon(src='../src/images/icons/login.png', alt='login')
+          span Логин
+        .form-authorise__row
+          span.img 
+            img.img-icon(src='./images/password.png', alt='pass')
+          span Пароль
+      .form-authorise__check
+        input#human.form-authorise__input_checkbox(type='checkbox', name='human', value='human', checked='')
+        label.form-authorise__label.form-authorise__label_type_checkbox(for='human') Я человек
+      h4.form-authorise__label Вы точно не робот?
+      .form-authorise__block
+        .form-authorise__box
+          input#agree.form-authorise__input_radio(type='radio', name='yes', value='agree', checked='')
+          label.form-authorise__label.form-authorise__label_type_radio(for='agree') Да
+        .form-authorise__box
+          input#disagree.form-authorise__input_radio(type='radio', name='yes', value='disagree')
+          label.form-authorise__label.form-authorise__label_type_radio(for='disagree') Не уверен
+    .button
+      button.btn.btn-home На главную
+      button.btn.btn-login Войти
+    .footer © Владимир Астахов | создано с любовью в LoftSchool | 2016

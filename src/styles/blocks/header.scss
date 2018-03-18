@@ -1,0 +1,22 @@
+.header-authorise {
+    width: 11.25rem;
+    height: 2.8125rem;
+    border-radius: 1.3125rem;
+    font-family:  "Roboto-Medium";
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    position: relative;
+    display: block;
+    right: -62.5rem;
+    color: #ffffff;
+    border: 0.0625rem solid #ffffff;
+    padding-top: 0.625rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.header-authorise:hover {
+    background: #4e8839;
+    border-color: #6c7f55;
+}

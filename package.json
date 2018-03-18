@@ -38,6 +38,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "gulp-wait": "0.0.2",
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
     "pug": "^2.0.1",
