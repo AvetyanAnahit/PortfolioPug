@@ -1,0 +1,70 @@
+.block-triangle {
+    margin-bottom: 0;
+    margin-top: -170px;
+    margin-left: -61px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-content: normal;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.works__block {
+    display: flex;
+    width: 100%;
+    height: 750px;
+    top: 54%;
+}
+
+
+
+
+
+.block-triangle__image {
+    width: 1660px;
+}
+
+.block-triangle__picture {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    margin-top: -200px;
+    margin-left: 634px;
+}
+
+
+.block-triangle__title {
+    display: flex;
+    flex: inherit;
+    align-items: center;
+    position: absolute;
+    left: 43%;
+    top: 34%;
+    font-size: 63px;
+
+}  
+
+.block-triangle__rectangle {
+    margin-left: -274px;
+    margin-top: -106px;
+}
+
+
+
+
+.about-me {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/bg/photo-1451563057469-b8bccdabd27d.png );
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 14%;
+  margin: auto;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+   background-size: 100%; /* Современные браузеры */
+
+}

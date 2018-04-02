@@ -1,0 +1,41 @@
+
+.left-side {
+  
+    width: 50%;
+    background-color: #ebefe2;
+    
+}
+
+.left-side__content {
+    margin: 300px 230px;
+    display: grid;
+}
+
+.left-side__title {
+    font-family: "SansusWebissimo";
+    font-size: 35px;   
+    margin-bottom: 25px; 
+    text-align: center;
+}
+
+.left-side__rectangle {
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.left-side__block {
+    font-family: "Roboto-Medium"; 
+    color: #4e8839;
+    margin: 25px auto;
+}
+
+.left-side__btn.left-side__btn {
+    height: 48px;
+    width: 200px;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: #6c9c5a;
+    color: #ffffff;
+}

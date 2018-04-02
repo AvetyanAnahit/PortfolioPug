@@ -1,0 +1,19 @@
+.footer__authorise-social {
+    display: flex;
+    margin-left: 10px;
+}
+
+.footer__authorise-social__list {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+
+}
+
+.footer__authorise-social__item {
+    margin-left: 25px;
+}
+
+.footer__authorise-social__item:hover {
+    background: #ffffff;
+}

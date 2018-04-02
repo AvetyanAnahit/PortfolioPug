@@ -1,0 +1,27 @@
+.hero {
+    color: #efeee9;
+    margin: 150px 630px;
+}
+
+.hero__desc {
+    display: grid;
+    font-family: "Roboto-Regular";
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 36px;
+}
+
+.hero-image {   
+    width: 146px;
+    height: 146px;
+    border-radius: 72px;
+    margin-left: 70px;
+    margin-top: 5px;
+} 
+
+.arrow-down.hero__scroll-button {
+    position: absolute;
+    left: 50%;
+}

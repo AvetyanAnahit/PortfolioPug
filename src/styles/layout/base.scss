@@ -11,23 +11,6 @@ body {
   @include roboto();
 }
 
-.wrapper {
-  overflow: hidden;
-  min-height: 100%;
-  position: relative;
-}
-
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.section {
-  min-height: 650px;
-  height: 100vh;
-}
 
 * {
   box-sizing: border-box;
@@ -60,15 +43,26 @@ button[type="button"] {
   }
 }
 
-// .wrapper {
-//   width: 100%;
-//   min-height: 100%;
-//   position: relative;
-// }
 
+.wrapper {
+  overflow: hidden;
+  // min-height: 100%;
+  position: relative;
+  max-width: 1800px;
+ 
+}
+
+ 
 .container {
-  width: 75rem;
-  height: 43.75rem;
+  // min-height: 650px;
+  height: 100%;
+  width: 100vw;
+}
+
+.section {
+  width:100vw;
+  // height: 43.75rem;
+  height: 100%;
 }
 
 
@@ -78,8 +72,30 @@ button[type="button"] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
   left: 14%;
   margin: auto;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+   background-size: 100%; /* Современные браузеры */
 
 }
+
+.footer {
+  height: 125px;  
+  display: flex;
+  position: relative;
+  width: 100%; 
+  color: #ffffff;
+  background: #53595c;
+  opacity: .9;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+

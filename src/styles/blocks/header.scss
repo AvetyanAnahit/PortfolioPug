@@ -14,9 +14,16 @@
     padding-top: 0.625rem;
     box-sizing: border-box;
     cursor: pointer;
+
 }
 
 .header-authorise:hover {
     background: #4e8839;
     border-color: #6c7f55;
+}
+
+.header-img {
+    position: absolute;
+    top: 7%;
+    left: 10%;
 }

@@ -1,0 +1,42 @@
+.full-screen__list {
+    display: none;
+  }
+  .active.full-screen__list {
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  
+  .menu__hamburger{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+  .menu__hamburger__line{
+    width: 1.5rem;
+    height: 0.3125rem;
+    background: black;
+    display: inline-block;
+    border-radius: 0.125rem;
+    margin: 0.25rem 0 0 1.5625rem; 
+   
+  }
+  
+  
+  .menu__hamburger_active .menu__hamburger__line:nth-child(2n+0){
+    opacity:0;
+  }
+  .menu__hamburger_active .menu__hamburger__line:nth-child(1n+0){
+            transform: rotate(45deg) translateY(12px);
+  }
+  .menu__hamburger_active .menu__hamburger__line:nth-child(3n+0){
+        transform: rotate(-45deg) translateY(-12px);
+  }
+  
+  .hamburger-list-active{
+    display: none;
+  
+  }
