@@ -1,6 +1,6 @@
 .hero {
     color: #efeee9;
-    margin: 150px 630px;
+    margin: 150px 150px;
 }
 
 .hero__desc {
@@ -24,4 +24,5 @@
 .arrow-down.hero__scroll-button {
     position: absolute;
     left: 50%;
+    top: 20%; 
 }

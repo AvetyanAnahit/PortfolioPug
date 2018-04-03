@@ -30,12 +30,21 @@
     margin: 25px auto;
 }
 
-.left-side__btn.left-side__btn {
+.left-side__btn {
     height: 48px;
     width: 200px;
     margin: 25px auto;
     border: 1px solid black;
     border-radius: 25px;
     background: #6c9c5a;
+    color: #ffffff;
+}
+
+.left-side__btn-icon {
+    margin-right: 15px;
+}
+
+.left-side__btn-link {
+    text-decoration: none;
     color: #ffffff;
 }

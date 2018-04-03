@@ -6,3 +6,8 @@
 .right-side__item  {
     display: none;
 }
+
+
+.right-side__item:first-child  {
+    display: flex;
+}

@@ -6,106 +6,152 @@ block variables
 
   block content
   .wrapper
-   section.container.welcome-container
-      header.header
-       .links
-         .authorise-social
-          ul.authorise-social__list
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30', fill='white')
-                  use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
-                  use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
-                  use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#in') 
-       .hamburger
-        .menu__hamburger
-          a.menu__hamburger(href='#')
-              span.menu__hamburger__line
-              span.menu__hamburger__line
-              span.menu__hamburger__line
-          ul.full-screen__list
-            li.full-screen__item Мои работы
-            li.full-screen__item Обо мне 
-            li.full-screen__item Блог
-            li.full-screen__item Авторизация 
-       .hero
-        .hero__desc
-          img.hero-image(src='../images/content/fashmark-men-trends-nature.png', alt='')
-          span.hero-name Владимир Астахов
-          span.hero-self Личный сайт веб разработчика
-       .arrow-down.hero__scroll-button
-          a.arrow-down(href='')
-            svg(viewbox='0 0 50 50', width='25', height='25')
-              use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#arrow_down')
-       .header-img
-        img(src="../images/bg/portfolio_header.png", alt="")   
+    section.container.welcome-container
+        header.header
+        .links
+          .authorise-social
+            ul.authorise-social__list
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30', fill='white')
+                    use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
+                    use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
+                    use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#in') 
+            .menu__hamburger
+              a.menu__hamburger(href='#')
+                  span.menu__hamburger__line
+                  span.menu__hamburger__line
+                  span.menu__hamburger__line
+            ul.full-screen__list
+                li.full-screen__item
+                 a(href="") Мои работы
+                li.full-screen__item
+                 a(href="") Обо мне 
+                li.full-screen__item
+                 a(href="") Блог
+                li.full-screen__item
+                 a(href="") Авторизация 
+        .hero
+          .hero__desc
+            img.hero-image(src='../images/content/fashmark-men-trends-nature.png', alt='')
+            span.hero-name Владимир Астахов
+            span.hero-self Личный сайт веб разработчика
+        .arrow-down.hero__scroll-button
+            a.arrow-down(href='')
+              svg(viewbox='0 0 50 50', width='25', height='25')
+                use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#arrow_down')
+        .header-img
+          img(src="../images/bg/portfolio_header.png", alt="")   
 
+          
+    section.container.works
+        .block-triangle
+            img.block-triangle__image(src='../images/bg/bg.png', alt='')
+            .block-triangle__item  
+            img.block-triangle__picture(src='../images/bg/works_header.png', alt='')
+            h1.block-triangle__title Мои работы
+            img.block-triangle__rectangle(src='../images/bg/rectangle_13.png', alt='')
+             
+        .works__block
+          .left-side
+            .left-side__content
+                h1.left-side__title Сайт школы онлайн Образования
+                img.left-side__rectangle(src='../images/bg/rectangle_13.png', alt='')
+                h2.left-side__block HTML , CSS, JAVASCRIPT
+                button.left-side__btn
+                  img.left-side__btn-icon(src='../images/bg/link.png', alt='')                  
+                  a.left-side__btn-link(href='//loftschool.ru', target='_blank') Посмотреть сайт
+                  
+          .right-side
+            ul.right-side__list
+              li.right-side__item 
+                img.left-side__rectangle(src='../images/content/work-1.png', alt='')
+              li.right-side__item 
+                img.left-side__rectangle(src='../images/content/work-2.png', alt='')
+              li.right-side__item 
+                img.left-side__rectangle(src='../images/content/work-3.png', alt='')
+              li.right-side__item 
+                img.left-side__rectangle(src='../images/content/work-4.png', alt='')
+                        
+            
+    section.container.about-me
+      .about-me__description
+        img.about-me__picture(src='../images/bg/about_header.png', alt='')
+        h1.about-me__title Что обо мне говорят
+        img.about-me__rectangle(src='../images/bg/rectangle_13.png', alt='')
+        .about-me__list
+          img.about-me__leaves1(src='../images/bg/list1.png', alt='')
+          .about-me__item
+            img.about-me__image(src='../images/content/dmitrii.png', alt='')
+            .about-me__desc
+              img.about-me__quote(src='../images/bg/quotes.png', alt='')
+              p.about-me__para
+                | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+              .about-me__name Ковальчук Дмитрий
+              .about-me__who  — основатель Loftschool
+          .about-me__item
+            img.about-me__image(src='../images/content/vladimir.png', alt='')
+            .about-me__desc
+              img.about-me__quote(src='../images/bg/quotes.png', alt='')
+              p.about-me__para
+                | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              .about-me__name  Сабанцев Владимир
+              .about-me__who  — преподаватель
+                 img.about-me__leaves(src='../images/bg/list2.png', alt='')
+                 img.about-me__leaves(src='../images/bg/list3.png', alt='')
+                 
+        .about-me__authorise
+          form.form-about-me(action='/')
+            h2.form-about-me__title Связаться со мной
+            img.about-me__rect(src='../images/bg/rectangle_13.png', alt='')
+            .form-about-me__row
+              span Имя
+            .form-about-me__row
+              span Email
+            .form-about-me__row
+              span Ваше сообщение
+        .button.button__about-me
+              button.btn.btn-home Отправить
+              button.btn.btn-login Очистить
+       
         
-   section.container.works
-    .block-triangle
-        img.block-triangle__image(src='../images/bg/bg.png', alt='')
-        .block-triangle__item  
-        img.block-triangle__picture(src='../images/bg/works_header.png', alt='')
-        h1.block-triangle__title Мои работы
-        img.block-triangle__rectangle(src='../images/bg/rectangle_13.png', alt='')
-        
-    .works__block
-       .left-side
-        .left-side__content
-            h1.left-side__title Сайт школы онлайн Образования
-            img.left-side__rectangle(src='../images/bg/rectangle_13.png', alt='')
-            h2.left-side__block HTML , CSS, JAVASCRIPT
-            a.left-side__btn(href='//loftschool.ru', target='_blank')
-              button.left-side__btn 
-                span.left-side__btn-icon(src='./images/link.png', alt='pass')
-                span.left-side__btn-title Посмотреть сайт
-       .right-side
-        ul.right-side__list
-          li.right-side__item 
-            img.left-side__rectangle(src='../images/content/work-1.png', alt='')
-          li.right-side__item 
-            img.left-side__rectangle(src='../images/content/work-2.png', alt='')
-          li.right-side__item 
-            img.left-side__rectangle(src='../images/content/work-3.png', alt='')
-          li.right-side__item 
-            img.left-side__rectangle(src='../images/content/work-4.png', alt='')
-                    
-        
-   section.container.about-me
-   
-   footer.footer
-        .footer__column.footer__column-left
-          p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-        .footer__column.footer__column-center
-          .footer__row
-            ul.footer__row-list
-              li.footer__row-item Мои работы
-              li.footer__row-item Обо мне
-              li.footer__row-item Блог
-              li.footer__row-item Авторизация
-          .footer__row
-             .footer__authorise-social
-              ul.footer__authorise-social__list
-                li.footer__authorise-social__item
-                  a.footer__authorise-social__link(href='#')
-                    svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
-                      use.footer__authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
-                li.footer__authorise-social__item
-                  a.footer__authorise-social__link(href='#')
-                    svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
-                      use.footer__authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
-                li.footer__authorise-social__item
-                  a.footer__authorise-social__link(href='#')
-                    svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
-                      use.footer__authorise-social-icons(xlink:href='../images/icons/sprite.svg#in')
-        .footer__column.footer__column-right
-          p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.— Martin Golding
-   .border__footer  
-        .footer__row-bottom
-          p.footer__row-para © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+    footer.footer
+          .footer__column.footer__column-left
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+          .footer__column.footer__column-center
+            .footer__row
+              ul.footer__row-list
+                li.footer__row-item
+                  a(href="") Мои работы
+                li.footer__row-item
+                  a(href="") Обо мне
+                li.footer__row-item
+                  a(href="") Блог
+                li.footer__row-item
+                  a(href="") Авторизация
+            .footer__row
+              .footer__authorise-social
+                ul.footer__authorise-social__list
+                  li.footer__authorise-social__item
+                    a.footer__authorise-social__link(href='#')
+                      svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
+                        use.footer__authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
+                  li.footer__authorise-social__item
+                    a.footer__authorise-social__link(href='#')
+                      svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
+                        use.footer__authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
+                  li.footer__authorise-social__item
+                    a.footer__authorise-social__link(href='#')
+                      svg(viewbox='0 0 50 50', width='25', height='25', fill='#a9acae')
+                        use.footer__authorise-social-icons(xlink:href='../images/icons/sprite.svg#in')
+          .footer__column.footer__column-right
+            p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.— Martin Golding
+    .border__footer  
+          .footer__row-bottom
+            p.footer__row-para © Владимир Астахов | Создано с любовью в LoftSchool | 2016

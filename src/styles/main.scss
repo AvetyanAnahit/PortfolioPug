@@ -17,11 +17,14 @@ $light-grey: #dfdcd5;
 @import './blocks/authorise.scss';  
 @import './blocks/authorise-social.scss';
 @import './blocks/form.scss';
-@import './header.scss'; 
-@import './hamburger.scss';
+@import './blocks/header.scss'; 
+@import './blocks/hamburger.scss';
 @import './blocks/about-left.scss';
 @import './blocks/about-right.scss';
-@import './blocks/triangle.scss';  
+@import './blocks/triangle.scss'; 
+@import './blocks/about_me.scss';
+@import './blocks/form__about_me.scss';   
+   
 @import './blocks/left-side.scss';  
 @import './blocks/right-side.scss';  
 @import './blocks/header.scss';

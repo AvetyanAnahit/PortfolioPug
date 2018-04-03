@@ -1,0 +1,45 @@
+.about-me__authorise {
+    width: 380px;
+    height: 415px;
+    background: #373e42;
+    opacity: .7;
+    margin-left: 600px;
+    margin-top: 75px;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.about-me__authorise:hover {
+    filter: none;
+}
+
+.form-about-me__title {
+    font-family: "SansusWebissimo";
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+img.about-me__rect {
+    height: 4px;
+    margin: 30px 140px;
+}
+
+.form-about-me__row {
+    height: 2.8125rem;
+    width: 336px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 2.9375rem;
+    margin-bottom: 1.25rem;
+    padding: 10px 20px;
+    left: 1.25rem;
+    color: #b5b8b9;
+    font-family: "Roboto-Regular" 16px;
+}
+
+.form-about-me__row:last-child {
+    height: 141px;
+    border-radius: 20px
+}

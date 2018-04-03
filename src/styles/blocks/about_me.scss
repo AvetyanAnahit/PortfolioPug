@@ -1,0 +1,86 @@
+
+.about-me {
+  height: 1350px;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/bg/photo-1451563057469-b8bccdabd27d.png );
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 14%;
+  margin: auto;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+//    background-size: 100%; /* Современные браузеры */
+
+}
+
+.about-me__picture {
+    width: 500px;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 550px;
+}
+
+.about-me__title {
+    font-family: "SansusWebissimo";
+    font-size: 63px;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 42%;
+    top: 54%;
+    width: 400px;
+}
+
+.about-me__rectangle 
+{
+    height: 4px;
+    margin-left: 777px;
+   
+}
+
+
+.about-me__list {
+    display: flex;
+    width: 800px;
+    flex-direction: row; 
+    margin: 30px 450px;
+}
+
+.about-me__item  {
+    flex-direction: column;
+    display: flex;
+}
+
+.about-me__image {
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+}
+
+.about-me__desc {
+    font-family: "Roboto-Medium";
+}
+
+.about-me__para {
+    margin-top: -40px;
+}
+
+.about-me__name {
+    font-family: "Roboto-Bold";
+    color: #4e8839;
+    text-align: center;
+}
+
+.about-me__who {
+    font-family: "Roboto-Medium";
+    font-style: italic;
+    text-align: center;
+}
+

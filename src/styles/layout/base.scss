@@ -32,6 +32,11 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 button[type="button"] {
   cursor: pointer;
 }
@@ -42,7 +47,7 @@ button[type="button"] {
     font-size: 16px;
   }
 }
-
+ 
 
 .wrapper {
   overflow: hidden;
@@ -54,8 +59,7 @@ button[type="button"] {
 
  
 .container {
-  // min-height: 650px;
-  height: 100%;
+  min-height: 750px;
   width: 100vw;
 }
 
