@@ -14,6 +14,8 @@ $light-grey: #dfdcd5;
 
 @import './blocks/button.scss';
 @import './blocks/block';
+@import './blocks/blog_block';
+
 @import './blocks/authorise.scss';  
 @import './blocks/authorise-social.scss';
 @import './blocks/form.scss';
@@ -21,10 +23,11 @@ $light-grey: #dfdcd5;
 @import './blocks/hamburger.scss';
 @import './blocks/about-left.scss';
 @import './blocks/about-right.scss';
+@import './blocks/circle.scss';
 @import './blocks/triangle.scss'; 
 @import './blocks/about_me.scss';
-@import './blocks/form__about_me.scss';  
-   
+@import './blocks/about_map.scss';
+@import './blocks/form__about_me.scss';    
 @import './blocks/left-side.scss';  
 @import './blocks/right-side.scss';  
 @import './blocks/header.scss';

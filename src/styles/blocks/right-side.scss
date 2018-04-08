@@ -1,13 +1,16 @@
-.right-side {
+.works__right {
     width: 50%;
     background-color: #e1e4d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.right-side__item  {
+.works-slider__control-item  {
     display: none;
 }
 
 
-.right-side__item:first-child  {
-    display: flex;
+.works-slider__control-item:first-child  {
+    display: flex;   
 }

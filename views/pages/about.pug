@@ -7,42 +7,53 @@ block variables
   block content
   .wrapper
    section.container.welcome-container
-      header.header
-       .links
-         .authorise-social
-          ul.authorise-social__list
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30', fill='white')
-                  use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
-                  use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
-            li.authorise-social__item
-              a.authorise-social__link(href='#')
-                svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
-                  use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#in')
-
-        
-       .hamburger
-       .hero
-        .hero__desc
-          img.hero-image(src='../images/content/fashmark-men-trends-nature.png', alt='')
-          span.hero-name Владимир Астахов
-          span.hero-self Личный сайт веб разработчика
-       .arrow-down.hero__scroll-button
-          a.arrow-down(href='')
-            svg(viewbox='0 0 50 50', width='25', height='25')
-              use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#arrow_down')
-       .header-img
-        img(src="../images/bg/portfolio_header.png", alt="")   
+        header.header
+        .links
+          .authorise-social
+            ul.authorise-social__list
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30', fill='white')
+                    use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#vk')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
+                    use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#github')
+              li.authorise-social__item
+                a.authorise-social__link(href='#')
+                  svg(viewbox='0 0 50 50', width='30', height='30'  fill='white')
+                    use.authorise-social-icons(xlink:href='../images/icons/sprite.svg#in') 
+            .menu__hamburger
+              a.menu__hamburger(href='#')
+                  span.menu__hamburger__line
+                  span.menu__hamburger__line
+                  span.menu__hamburger__line
+            ul.full-screen__list
+                li.full-screen__item
+                 a(href="") Мои работы
+                li.full-screen__item
+                 a(href="") Обо мне 
+                li.full-screen__item
+                 a(href="") Блог
+                li.full-screen__item
+                 a(href="") Авторизация 
+        .hero
+          .hero__desc
+            img.hero-image(src='../images/content/fashmark-men-trends-nature.png', alt='')
+            span.hero-name Владимир Астахов
+            span.hero-self Личный сайт веб разработчика
+        .arrow-down.hero__scroll-button
+            a.arrow-down(href='')
+              svg(viewbox='0 0 50 50', width='25', height='25')
+                use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#arrow_down')
+        .header-img
+          img(src="../images/bg/portfolio_header.png", alt="")   
 
         
    section.container.about
         .about__left
          .tirangle.about__triangle-left
-           svg(viewbox='0 0 50 50', width='900', height='1010', fill='#ebefe2')
+           svg(viewbox='0 0 760 1010', width='760', height='1010', fill='#ebefe2')
                   use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#about_bg_left')
          .about__left-desc
           .about__left-title
@@ -59,7 +70,7 @@ block variables
             p.user-description__para Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
         .about__right
           .tirangle.about__triangle-right
-           svg(viewbox='0 0 50 50', width='900', height='1010', fill='#f4f5f0')
+           svg(viewbox='0 0 760 1010', width='760', height='1010', fill='#f4f5f0')
                   use.authorise-social-icons(xlink:href='./images/icons/sprite.svg#about_bg_right')
           .about__right-desc
             .about__right-title
@@ -67,21 +78,75 @@ block variables
             .about__right-description.text-content
               p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .about__right-content
-              ul.skills-list
-                each item in ['Frontend', 'Backend', 'Workflow']  
-                    li.skills-list__item
-                      .skills-row
-                      .skills-row__title #{item}
-                    ul.skills-row__list
+              
+                      
+              ul.skills-row__list
+                h2.skills-row__title Frontend
+                li.skills-row__item
+                  .skill HTML 5
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none') 
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill CSS 3
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill JavaScript & jQuery
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+              ul.skills-row__list 
+                h2.skills-row__title Backend
+                li.skills-row__item
+                  .skill PHP
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none') 
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill mySQL
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill Node.js & npm
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill Mongo.db
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                  
+              ul.skills-row__list 
+                h2.skills-row__title Workflow
+                li.skills-row__item
+                  .skill Git
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none') 
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill Gulp
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                li.skills-row__item
+                  .skill Bower
+                  svg.skill__circle(viewbox='0 0 150 150')
+                    circle.skill__circle-first(r='45' cx='50%' cy='50%' fill='none')
+                    circle.skill__circle-second.circle-15(r='45' cx='50%' cy='50%' transform='rotate(-90 75 75)')
+                    ul.skills-row__list                   
                       li.skills-row__item
                         .skill
                           svg.skill__circle
                           .skill__title 
 
-   section.container.section.map
+   section.container.map
       .google-map.
       .map__data
-          img(src="../images/content/map.jpg", alt="")
+          #map
           .contatcts
             .contacts__title
               .block-subtitle Контакты
@@ -126,6 +191,6 @@ block variables
    .border__footer  
         .footer__row-bottom
           p.footer__row-para © Владимир Астахов | Создано с любовью в LoftSchool | 2016
-
-                
+  
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDAZ-vYE8DYK4Wdwh9DASeG5v5qDG6DGZ0 &callback=initMap', async='', defer='')        
         

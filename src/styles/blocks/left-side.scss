@@ -1,17 +1,27 @@
+.works__content {
+    display: flex;
+}
 
-.left-side {
+.works__left {
   
     width: 50%;
     background-color: #ebefe2;
     
 }
 
-.left-side__content {
+.works-slider__content {
     margin: 300px 230px;
     display: grid;
 }
 
-.left-side__title {
+
+ .works-slider__item-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.subtitle {
     font-family: "SansusWebissimo";
     font-size: 35px;   
     margin-bottom: 25px; 
@@ -19,12 +29,12 @@
 }
 
 .left-side__rectangle {
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: auto;
   
 }
 
-.left-side__block {
+.works__content-desc {
     font-family: "Roboto-Medium"; 
     color: #4e8839;
     margin: 25px auto;

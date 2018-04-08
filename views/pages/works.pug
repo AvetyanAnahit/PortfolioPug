@@ -50,36 +50,81 @@ block variables
           img(src="../images/bg/portfolio_header.png", alt="")   
 
           
-    section.container.works
-        .block-triangle
+    //- section.container.works
+    //-     .block-triangle
+    //-         img.block-triangle__image(src='../images/bg/bg.png', alt='')
+    //-         .block-triangle__item  
+    //-         img.block-triangle__picture(src='../images/bg/works_header.png', alt='')
+    //-         h1.block-triangle__title Мои работы
+    //-         img.block-triangle__rectangle(src='../images/bg/rectangle_13.png', alt='')
+             
+    //-     .works__block
+    //-       .left-side
+    //-         .left-side__content
+    //-             h1.left-side__title Сайт школы онлайн Образования
+    //-             img.left-side__rectangle(src='../images/bg/rectangle_13.png', alt='')
+    //-             h2.left-side__block HTML , CSS, JAVASCRIPT
+    //-             button.left-side__btn
+    //-               img.left-side__btn-icon(src='../images/bg/link.png', alt='')                  
+    //-               a.left-side__btn-link(href='//loftschool.ru', target='_blank') Посмотреть сайт
+                  
+    //-       .right-side
+    //-       .right-side__controls
+    //-         a.right-side__control-btn.right-side__control-btn_left(href='#')
+    //-         ul.right-side__list
+    //-           li.right-side__item 
+    //-             img.left-side__rectangle(src='../images/content/work-1.png', alt='')
+    //-           li.right-side__item 
+    //-             img.left-side__rectangle(src='../images/content/work-2.png', alt='')
+    //-           li.right-side__item 
+    //-             img.left-side__rectangle(src='../images/content/work-3.png', alt='')
+    //-           li.right-side__item 
+    //-             img.left-side__rectangle(src='../images/content/work-4.png', alt='')
+    //-       a.right-side__control-btn.right-side__control-btn_right(href='#')            
+
+    section.section.works
+    .block-triangle
             img.block-triangle__image(src='../images/bg/bg.png', alt='')
             .block-triangle__item  
             img.block-triangle__picture(src='../images/bg/works_header.png', alt='')
             h1.block-triangle__title Мои работы
             img.block-triangle__rectangle(src='../images/bg/rectangle_13.png', alt='')
-             
-        .works__block
-          .left-side
-            .left-side__content
-                h1.left-side__title Сайт школы онлайн Образования
+    .works__content
+      .works__left
+        .works-slider__content
+          .works-slider__content-wrapper
+            .works-slider__display
+              img.works-slider__display-pic(src='', alt='')
+            .works-slider__item-about
+              .works__subtitle 
+                .subtitle  Сайт школы онлайн Образования
                 img.left-side__rectangle(src='../images/bg/rectangle_13.png', alt='')
-                h2.left-side__block HTML , CSS, JAVASCRIPT
+              .works__content-desc HTML , CSS, JAVASCRIPT
+              .works__content-btn
                 button.left-side__btn
                   img.left-side__btn-icon(src='../images/bg/link.png', alt='')                  
                   a.left-side__btn-link(href='//loftschool.ru', target='_blank') Посмотреть сайт
-                  
-          .right-side
-            ul.right-side__list
-              li.right-side__item 
-                img.left-side__rectangle(src='../images/content/work-1.png', alt='')
-              li.right-side__item 
-                img.left-side__rectangle(src='../images/content/work-2.png', alt='')
-              li.right-side__item 
-                img.left-side__rectangle(src='../images/content/work-3.png', alt='')
-              li.right-side__item 
-                img.left-side__rectangle(src='../images/content/work-4.png', alt='')
-                        
-            
+      .works__right
+        .works-slider
+          .works-slider__controls
+            a.works-slider__control-btn.works-slider__control-btn_left(href='#')
+              svg(viewbox='0 0 50 50', width='25', height='25')
+                use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#portf_arrow_down')
+              ul.works-slider__control-list
+                li.works-slider__control-item(data-full='../images/content/work-1.png', data-title='Агентсво интернет решений "ITLoft"', data-skills='node', data-link='http://itloft.ru/')
+                  img.works-slider___control-img(src='../images/content/work-1.png')
+                li.works-slider__control-item(data-full='../images/content/work-2.png', data-title='Школа онлай-образования "LoftSchool"', data-skills='html5, CSS3, javascript, php', data-link='http://loftschool.com/')
+                  img.works-slider___control-img(src='../images/content/work-2.png')
+                li.works-slider__control-item(data-full='../images/content/work-3.png', data-title='Портал обучающих уроков "LoftBlog"', data-skills='Ruby on Rails, javascript, RESTful', data-link='http://loftblog.ru/')
+                  img.works-slider___control-img(src='../images/content/work-3.png')
+                li.works-slider__control-item(data-full='../images/content/work-4.png', data-title='Сайт "Атма йога"', data-skills='UX, design, seo', data-link='http://atmayoga.ru/')
+                  img.works-slider___control-img(src='../images/content/work-4.png')
+            a.works-slider__control-btn.works-slider__control-btn_right(href='#')
+              svg(viewbox='0 0 50 50', width='25', height='25')
+                use.authorise-social-icons(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='../images/icons/sprite.svg#portf_arrow_up')
+
+
+
     section.container.about-me
       .about-me__description
         img.about-me__picture(src='../images/bg/about_header.png', alt='')
@@ -155,3 +200,7 @@ block variables
     .border__footer  
           .footer__row-bottom
             p.footer__row-para © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+
+//-  script(src='./js/jquery.min.js')
+//- script(src='./js/anmtxt.js')
+//- script(src='./js/slider.js')

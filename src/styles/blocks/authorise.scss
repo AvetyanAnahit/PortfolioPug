@@ -1,14 +1,15 @@
 
 .authorise {
     width: 23.75rem;
-    height: 26.6875rem;
+    height: 24.75rem;
     color: #ffffff;
     position: absolute;
     display: initial;
-    left: 34%;
     top: 21%;
-    background: #203823;
-    opacity: .8;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(18, 38, 32, 0.6);
+    
  
 }
 
@@ -32,6 +33,7 @@
     margin-left: 118px;
     margin-top: 40px;
     border-radius: 72px;
+    display: flex;
    
 }
 
@@ -39,7 +41,9 @@
     font-family: "Roboto-Regular";
     color: #ffffff;
     height: 52px;
-    margin-left: 50px;
+    width: 100%;
+    text-align: center;
+   
     margin-top: 20px;
     display: flex;
 }
@@ -47,6 +51,7 @@
 .authorise-descripton__list {
     display: list-item;
     list-style-type: none;
+    width: 100%;
 }
 
 .authorise-desciption__name {
@@ -56,6 +61,7 @@
 
     .authorise-desciption__site {
         font-size: 16px;
+        opacity: .8;
     }
 
 .rectangle {

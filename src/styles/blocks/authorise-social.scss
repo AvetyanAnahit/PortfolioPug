@@ -1,6 +1,17 @@
 
 .authorise-social {
     display: flex;
+
+    &.welcome{
+        height: 95px;
+        justify-content: center;
+
+        .authorise-social__list {
+            margin: 0;
+            align-items: center;
+        }
+    }
+
 }
 
 .authorise-social__list {
@@ -12,10 +23,17 @@
 
 }
 
+.authorise-social__link svg
+     {
+        fill: rgba(255, 255, 255, .5);
+        &:hover {
+            fill: #4e8839;
+        }
+    }
+
+
 .authorise-social__item {
     margin: 25px;
+    
 }
 
-.authorise-social__item:hover {
-    background: #4e8839;
-}

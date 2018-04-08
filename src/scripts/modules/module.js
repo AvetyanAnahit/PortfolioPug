@@ -13,3 +13,4 @@ menu__hamburger.addEventListener("click", function() {
     mobilemenu__content.classList.add("active");
   }
 });
+

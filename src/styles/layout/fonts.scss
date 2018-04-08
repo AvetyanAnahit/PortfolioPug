@@ -29,3 +29,48 @@
     font-weight: 700
   }
 }
+
+@font-face{
+  font-family: "FontAwesome" ;
+  src: url("../../fonts/FontAwesome.eot") format("eot"),
+  url("../../fonts/FontAwesome.svg") format("svg"),
+  url("../../fonts/FontAwesome.woff") format("woff"),
+  url("../../fonts/FontAwesome.ttf") format("ttf");
+
+}
+
+@font-face{
+  font-family: "SansusWebissimo";
+  src: url("../../fonts/SansusWebissimo.eot") format("eot"),
+  url("../../fonts/SansusWebissimo.svg") format("svg"),
+  url("../../fonts/SansusWebissimo.woff") format("woff"),
+  url("../../fonts/SansusWebissimo.ttf") format("ttf");
+
+}
+
+@font-face{
+  font-family: "Roboto-Bold";
+  src: url("../../fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+@font-face{
+  font-family: "Roboto-Light";
+  src:  url("../../fonts/Roboto-Light.ttf") format("ttf"), 
+  url("../../fonts/Roboto-LightItalic.ttf") format("ttf");
+}
+
+@font-face{
+  font-family: "Roboto-Medium";
+  src:  url("../../fonts/Roboto-Medium.ttf") format("ttf");
+}
+
+
+@font-face{
+  font-family: "Roboto-Regular";
+  src:   url("../../fonts/Roboto-Regular.eot") format("eot"),
+  url("../../fonts/Roboto-Regular.svg") format("svg"),
+  url("../../fonts/Roboto-Regular.ttf") format("ttf"),
+  url("../../fonts/Roboto-Regular.woff") format("woff");
+}  
+
+
