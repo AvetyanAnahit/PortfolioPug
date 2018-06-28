@@ -27,11 +27,11 @@
     height: 150px;
     position: relative;
     z-index: 10;
-    float: left;
+    float: left;  
   }
   
   .skill__circle:hover .circle-0 {
-     stroke-dasharray: .001 282.6;
+     stroke-dasharray: .001 282.6; 
   }
   .skill__circle:hover .circle-10 {
      stroke-dasharray: 28.26 282.6;
